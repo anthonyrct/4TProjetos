@@ -11,7 +11,7 @@ Route::get('/produto', function (){
     return view('produto');
 });
 
-Route::get('', function (){})
+Route::get('', function (){});
 
 Route::get('/contato', function(){
     return view('contato');
