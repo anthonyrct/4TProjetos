@@ -21,6 +21,6 @@ class Usuario extends Authenticatable
 
     public function inscricoes()
     {
-        return this->hasMany(Inscricao::class);
+        return $this->hasMany(Inscricao::class);
     }
 }

@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class inscricao extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'usuario_id', 'vaga_id', 'status'
+    ];
+
+    public function usuario()
+    {
+        return $this->belongsTo(Usuario::class);
+    }
+
+    public function vaga()
+    {
+        return $this->belongsTo(Vaga::class);
+    }
+
 }

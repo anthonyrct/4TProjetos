@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Vaga extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'titulo', 'descricao', 'localizacao', 'salario', 'empresa_id',
+    ];
+
+    public function inscricoes()
+    {
+        return $this->hasMany(Inscricao::class);
+    }
+
 }
