@@ -1,11 +1,14 @@
 <?php
 
+
 namespace App\Http\Middleware;
+
 
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
+
 
 class VagaMiddleware
 {
@@ -16,9 +19,18 @@ class VagaMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth::check()&& Auth::user()->tipo === 'empresa'){
-            return $next($request);
+        if(Auth::check() && Auth::user()->tipo === 'empresa'){
+        return $next($request);
         }
-        return redirect()->route('')->withErrors(['acess' => 'Você não tem permissão para acessar essa área']);
+
+
+        // Se não for uma empresa, redireciona com uma mensagem de erro
+        return redirect()->route('')->
+        withErrors(['access' => 'Você não tem permissão para acessar
+        essa área.']);
+
+
+
+
     }
 }

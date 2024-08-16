@@ -1,10 +1,14 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+
 use Illuminate\Http\Request;
 use App\Models\Vaga;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
 
 class vagaController extends Controller
 {
@@ -13,17 +17,21 @@ class vagaController extends Controller
      */
     public function index()
     {
-        $vagas = Vaga::all();
-        return view('vaga.index', compact('vagas'));
+        $empresa = Auth::user()->nome_empresa;
+        $vagas = Vaga::where('empresa',$empresa)->get();
+
+        return view('vagas.index',compact('vagas'));
     }
+
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('vaga.create');
+        return view('vagas.create');
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -31,28 +39,32 @@ class vagaController extends Controller
     public function store(Request $request)
     {
         $dados = $request->validate([
-            'titulo'=>'required|max:100',
-            'descricao'=>'required',
-            'localizacao'=>'required',
+            'titulo'=> 'required|max:100',
+            'descricao'=> 'required',
+            'localizacao'=> 'required',
             'salario'=>'required|numeric',
             'empresa'=>'required'
         ]);
         Vaga::create($dados);
 
-        return redirect()->route('vagas.index')->with('success','Vaga criada com sucesso.');
+
+        return redirect()->route('vagas.index')
+            ->with('success', 'Vaga criado com sucesso.');
+
+
     }
 
-    /**
-     * Display the specified resource.
-     */
+
+
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(Vaga $vaga)
     {
-        return view('vagas.edit', compact('vaga'));
+        return view('vagas.edit',compact('vaga'));
     }
+
 
     /**
      * Update the specified resource in storage.
@@ -60,15 +72,17 @@ class vagaController extends Controller
     public function update(Request $request, Vaga $vaga)
     {
         $dados = $request->validate([
-            'titulo'=>'required|max:100',
-            'descricao'=>'required',
-            'localizacao'=>'required',
+            'titulo'=> 'required|max:100',
+            'descricao'=> 'required',
+            'localizacao'=> 'required',
             'salario'=>'required|numeric',
             'empresa'=>'required'
         ]);
         $vaga->update($dados);
 
-        return redirect()->route('vagas.index')->with('success','Vaga atualizada com sucesso.');
+
+        return redirect()->route('vagas.index')
+            ->with('success', 'Vaga Atualizada com sucesso.');
     }
 
 
@@ -79,6 +93,8 @@ class vagaController extends Controller
     {
         $vaga->delete($vaga);
 
-        return redirect()->route('vagas.index')->with('success','Vaga deletada com sucesso.');
+
+        return redirect()->route('vagas.index')
+            ->with('success', 'Vaga Deletada com sucesso.');
     }
 }

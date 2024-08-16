@@ -8,18 +8,13 @@
 </head>
 <body>
 
-
     @include('parts.header')
-
 
     <div class="container">
         @yield('content')
     </div>
 
-
     @include('parts.footer')
-
-
 
 
 </body>
