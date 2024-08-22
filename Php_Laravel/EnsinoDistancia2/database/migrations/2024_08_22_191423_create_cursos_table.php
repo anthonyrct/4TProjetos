@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('cursos', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo'); // Título do curso
+            $table->text('descricao'); // Descrição do curso
+            $table->foreignId('user_id')->constrained('usuarios'); // Chave estrangeira para o professor (usuário)
             $table->timestamps();
         });
     }

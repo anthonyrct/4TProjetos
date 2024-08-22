@@ -10,7 +10,7 @@ class Usuario extends Model
     use HasFactory;
 
     protected $fillable = [
-        'nome', 'email', 'password', 'role'
+        'name', 'email', 'password', 'role'
     ];
 
     protected $hidden = [
@@ -28,4 +28,9 @@ class Usuario extends Model
     {
         return $this->hasMany(Matricula::class, 'user_id');
     }
+
+    public function cursosMatriculados()
+{
+    return $this->belongsToMany(Curso::class, 'matriculas');
+}
 }
