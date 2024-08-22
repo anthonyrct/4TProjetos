@@ -1,0 +1,32 @@
+
+			Diagrama de uso exeplificado em texto:
+
+
+				Administrador:
+
+-Gerencia Usuários
+-Gerencia Cursos
+-Gerencia Matrículas
+
+
+
+				Professor:
+-Cria Curso
+-Gerencia Conteúdo do Curso
+-Avalia Alunos
+-Interagi com Alunos
+
+
+				Aluno:
+-Inscreve-se em Cursos
+-Acessa Aulas
+-Envia Trabalhos(em progresso)
+-Faz Avaliações(em progresso)
+
+
+				Visitante(em progresso):
+-Visualiza Cursos Disponíveis
+
+
+link para o diagrama de fluxo:
+https://www.figma.com/design/me9UnuZZ4KoB5g1z1fGg6N/Untitled?node-id=5-83&t=kO67FHidVFzv8cLf-0
