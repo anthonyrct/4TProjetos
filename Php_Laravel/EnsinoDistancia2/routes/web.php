@@ -17,6 +17,9 @@ Route::middleware('role:professor')->group(function () {
     Route::get('/dashboard/professor', [DashboardController::class, 'dashboardProfessor'])->name('dashboard.professor');
 });
 
+Route::get('/ajuda', function () {
+    return view('help');
+});
 Route::get('/', function () {
     return view('welcome');
 });

@@ -11,6 +11,7 @@
         <nav>
             <ul>
                 <li><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="{{ url('/ajuda') }}">Ajuda</a></li>
 
                 @if(auth()->check() && auth()->user()->role == 'aluno')
                     <li><a href="{{ route('dashboard.aluno') }}">Meus Cursos</a></li>
