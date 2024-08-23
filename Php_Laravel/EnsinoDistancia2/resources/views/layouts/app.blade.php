@@ -13,7 +13,7 @@
                 <li><a href="{{ url('/') }}">Home</a></li>
                 <li><a href="{{ url('/ajuda') }}">Ajuda</a></li>
 
-                @if(auth()->check() && auth()->user()->role == 'aluno')
+                @if(auth::check() && auth::user()->role == 'aluno')
                     <li><a href="{{ route('dashboard.aluno') }}">Meus Cursos</a></li>
                 @elseif(auth()->check() && auth()->user()->role == 'professor')
                     <li><a href="{{ route('dashboard.professor') }}">Meus Cursos</a></li>

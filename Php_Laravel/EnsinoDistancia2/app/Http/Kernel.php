@@ -1,6 +1,19 @@
 <?php
+namespace App\Http;
 
-protected $routeMiddleware = [
+use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
-    'role' => \App\Http\Middleware\VerificaRole::class,
-];
+class Kernel extends HttpKernel
+{
+    /**
+     * The application's route middleware groups.
+     *
+     * @var array
+     */
+        protected $routeMiddleware = [
+
+            'role' => \App\Http\Middleware\VerificaRole::class,
+        ];
+    
+
+}

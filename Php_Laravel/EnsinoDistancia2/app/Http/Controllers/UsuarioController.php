@@ -26,6 +26,10 @@ class UsuarioController extends Controller{
         return redirect()->route('usuarios.index')->with('success', 'Usuário criado com sucesso.');
     }
 
+    public function showRegistroForm(){
+        return view('register');
+    }
+
     public function update(Request $request, Usuario $usuario)
     {
         $request->validate([

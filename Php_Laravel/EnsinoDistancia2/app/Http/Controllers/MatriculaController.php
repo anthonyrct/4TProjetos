@@ -1,16 +1,17 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Models\Curso;
+use App\Models\Cursos;
 use App\Models\Matricula;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MatriculaController extends Controller
 {
     // Matricular um aluno em um curso
-    public function store(Request $request, Curso $curso)
+    public function store(Request $request, Cursos $curso)
     {
-        $aluno = auth()->user(); // Aluno autenticado
+        $aluno = auth::user(); // Aluno autenticado
 
         // Verificar se o aluno já está matriculado no curso
         if (!$curso->alunos->contains($aluno->id)) {

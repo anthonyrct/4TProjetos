@@ -17,6 +17,6 @@ class Matricula extends Model
 
     public function curso()
     {
-        return $this->belongsTo(Curso::class, 'curso_id');
+        return $this->belongsTo(Cursos::class, 'curso_id');
     }
 }

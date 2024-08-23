@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Curso;
+
+use App\Models\Cursos;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CursosController extends Controller{
 // Exibir todos os cursos
 public function index()
 {
-    $cursos = Curso::all();
+    $cursos = Cursos::all();
     return view('cursos.index', compact('cursos'));
 }
 
@@ -27,29 +29,38 @@ public function store(Request $request)
         'descricao' => 'required|string',
     ]);
 
-    Curso::create([
+    if (Auth::check()) {
+    Cursos::create([
         'titulo' => $request->titulo,
         'descricao' => $request->descricao,
-        'user_id' => auth()->id(), // O professor logado cria o curso
-    ]);
+        'user_id' => auth::id(), // O professor logado cria o curso
 
+    ]);
     return redirect()->route('cursos.index')->with('success', 'Curso criado com sucesso!');
+    }   else{
+        return redirect()->route('login')->with('error', 'Você precisa estar autenticado para criar um curso.');
+    }
+
 }
 
+
+
 // Exibir um curso específico
-public function show(Curso $curso)
+public function show(Cursos $curso)
 {
     return view('cursos.show', compact('curso'));
 }
 
 // Exibir formulário para editar um curso
-public function edit(Curso $curso)
+public function edit (Cursos $curso)
 {
     return view('cursos.edit', compact('curso'));
+
+
 }
 
 // Atualizar um curso existente
-public function update(Request $request, Curso $curso)
+public function update(Request $request, Cursos $curso)
 {
     $request->validate([
         'titulo' => 'required|string|max:255',
@@ -65,24 +76,15 @@ public function update(Request $request, Curso $curso)
 }
 
 // Excluir um curso
-public function destroy(Curso $curso)
+public function destroy(Cursos $curso)
 {
     $curso->delete();
     return redirect()->route('cursos.index')->with('success', 'Curso excluído com sucesso!');
-}
-//funçoes para adicionar uma politica de qual usuario pode editar e excluir cursos, no caso o professor(em progesso)
-public function edit(Curso $curso)
-{
-    $this->authorize('update', $curso);
-    return view('cursos.edit', compact('curso'));
-}
 
 
-public function destroy(Curso $curso)
-{
-    $this->authorize('delete', $curso);
-    $curso->delete();
-    return redirect()->route('cursos.index')->with('success', 'Curso excluído com sucesso!');
+    // $this->authorize('delete', $curso);
+    // $curso->delete();
+    // return redirect()->route('cursos.index')->with('success', 'Curso excluído com sucesso!');
 }
 
 }

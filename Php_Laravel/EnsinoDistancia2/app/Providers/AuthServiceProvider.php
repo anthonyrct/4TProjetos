@@ -1,7 +1,28 @@
 <?php
-use App\Models\Curso;
-use App\Policies\CursoPolicy;
 
-protected $policies = [
-    Curso::class => CursoPolicy::class,
-];
+use App\Models\Cursos;
+use App\Policies\CursoPolicy;
+use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+
+class AuthServiceProvider extends ServiceProvider
+{
+    /**
+     * The policy mappings for the application.
+     *
+     * @var array
+     */
+    protected $policies = [
+        Cursos::class => CursoPolicy::class,
+    ];
+    /**
+     * Register any authentication / authorization services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->registerPolicies();
+
+        // Outras definições de autorização, se necessário
+    }
+}

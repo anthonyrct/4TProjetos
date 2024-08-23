@@ -31,6 +31,6 @@ class Usuario extends Model
 
     public function cursosMatriculados()
 {
-    return $this->belongsToMany(Curso::class, 'matriculas');
+    return $this->belongsToMany(Cursos::class, 'matriculas');
 }
 }
