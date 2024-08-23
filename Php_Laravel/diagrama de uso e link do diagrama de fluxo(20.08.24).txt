@@ -2,7 +2,7 @@
 			Diagrama de uso exeplificado em texto:
 
 
-				Administrador:
+				Administrador(em progresso):
 
 -Gerencia Usuários
 -Gerencia Cursos
@@ -13,8 +13,8 @@
 				Professor:
 -Cria Curso
 -Gerencia Conteúdo do Curso
--Avalia Alunos
--Interagi com Alunos
+-Avalia Alunos(em progresso)
+-Interagi com Alunos(em progresso)
 
 
 				Aluno:

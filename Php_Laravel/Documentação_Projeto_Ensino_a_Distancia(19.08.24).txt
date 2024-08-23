@@ -1,0 +1,289 @@
+		Documentação do projeto Ensino a Distancia:
+
+
+
+			Descrição do projeto:
+
+Site de cursos online onde os professores poderão cadastrar e gerenciar seus cursos 
+e os alunos poderão visualizar os cursos e se matricularem.
+
+
+				
+				Escopo:
+
+O projeto consiste no desenvolvimento de uma plataforma web de cursos online ultilizando laravel.
+O sistema permitira que os professores possam se cadastrar, criarem seus cursos, gerenciarem o andamento de seus cursos, atribuir atividades e notas ao alunos e poderem cadastrarem alunos ao seus cursos.
+Alunos poderão se matricular aos cursos disponiveis, poderão realizar atividades lançadas pelos professores, visualizarem suas notas em cada materia junto de sua fequencia e faltas.
+
+
+
+
+
+
+			Objetivos:
+
+
+			Especificos:
+
+
+-Desenvolver um sistema de cadastro e autenticação para alunos e professores.
+-Implementar funcionalidades para os alunos visualizarem e se matricularem aos cursos disponiveis.
+-Permitir que professores possam atribuir atividades ao curso e gerenciar o andamento do curso.
+-Garantir a segurança dos dados dos usuários e a integridade das transações dentro do sistema.
+
+
+			Mensuráveis:
+-Garantir que o sistema suporte usuários simultâneos sem degradação de desempenho.
+-Atingir um nível de satisfação de usuários acima de 85% em testes de usabilidade.
+-Redução do tempo de resposta do sistema para consultas de alunos/atividades para menos de 2 segundos.
+
+
+			Atingíveis:
+
+-Utilizar frameworks e bibliotecas bem documentadas (como Laravel) para assegurar o cumprimento dos prazos e qualidade do código.
+-Definir entregas em ciclos de desenvolvimento ágil (sprints), com revisões e feedback constantes.
+
+
+
+			Relevantes:
+
+-Atender à necessidade crescente de plataformas seguras e eficientes de ensino.
+-Prover uma solução escalável que possa ser expandida conforme o crescimento da base de usuários.
+
+
+
+			Cronograma:
+
+		Semana 1: Planejamento e Configuração do Ambiente
+
+    Planejamento do projeto: Definir requisitos e funcionalidades (usuários, cursos, avaliações, etc.).
+    Configuração do ambiente: Instalar Laravel, configurar banco de dados, ambiente local (XAMPP, Homestead, Docker).
+    Estrutura inicial do projeto: Criar o projeto Laravel, organizar pastas e dependências iniciais.
+
+Semana 2: Autenticação e Gerenciamento de Usuários
+
+    Configuração de Autenticação: Implementar Laravel Auth ou Jetstream (Admin, Professor, Aluno).
+    Migrations e Models: Criar as tabelas e modelos para usuários, incluindo perfis de usuário (Admin, Professor, Aluno).
+    CRUD de Usuários: Implementar o gerenciamento básico de usuários (criação, edição, exclusão).
+
+Semana 3: Criação e Gerenciamento de Cursos
+
+    Migrations e Models: Criar tabelas e modelos para cursos e aulas.
+    CRUD de Cursos e Aulas: Implementar criação, edição e exclusão de cursos e aulas pelo professor.
+    Relacionamentos: Configurar os relacionamentos entre Professor e Cursos, Alunos e Cursos.
+
+Semana 4: Upload de Conteúdo e Materiais
+
+    Upload de Vídeos e Materiais: Implementar sistema para upload de vídeos, PDFs e outros materiais de apoio.
+    Integração com Serviços de Armazenamento: Configurar integração com AWS S3, DigitalOcean Spaces, ou armazenamento local para guardar arquivos.
+
+Semana 5: Sistema de Avaliações e Progresso
+
+    Migrations e Models: Criar tabelas e modelos para avaliações e progresso dos alunos.
+    CRUD de Avaliações: Implementar criação, edição e exclusão de avaliações (quizzes, provas).
+    Sistema de Progresso: Implementar lógica para rastrear o progresso do aluno no curso.
+
+Semana 6: Painel do Aluno e Certificados
+
+    Painel do Aluno: Criar o painel onde o aluno pode ver seu progresso, cursos inscritos e notificações.
+    Geração de Certificados: Implementar sistema para gerar certificados ao concluir cursos.
+    Design e Responsividade: Trabalhar na interface do usuário e garantir que a plataforma seja responsiva.
+
+Semana 7: Testes e Correções
+
+    Testes Unitários e de Integração: Implementar testes para garantir o bom funcionamento de todas as funcionalidades.
+    Correção de Bugs: Revisar e corrigir possíveis bugs identificados durante o desenvolvimento e testes.
+
+Semana 8: Deploy e Lançamento
+
+    Deploy: Fazer o deploy da aplicação em um ambiente de produção (Heroku, DigitalOcean, AWS).
+    Configurações de Produção: Configurar variáveis de ambiente, backups automáticos e segurança.
+    Lançamento e Feedback: Lançar a plataforma e coletar feedback inicial de usuários.
+
+
+
+ Recursos Humanos
+
+    Desenvolvedor Backend:
+        Responsabilidades: Implementação de funcionalidades do servidor, manipulação de banco de dados, integração com APIs, e segurança da aplicação.
+        Habilidades Necessárias: Laravel, PHP, SQL, APIs RESTful, autenticação e autorização.
+
+    Desenvolvedor Frontend:
+        Responsabilidades: Desenvolvimento da interface do usuário, integração com o backend, design responsivo e experiência do usuário.
+        Habilidades Necessárias: HTML, CSS, JavaScript, frameworks como Vue.js ou React (se aplicável), conhecimento em Blade (Laravel).
+
+    Designer UX/UI:
+        Responsabilidades: Criação de wireframes, protótipos e design da interface do usuário.
+        Habilidades Necessárias: Ferramentas de design (Figma, Adobe XD), princípios de design responsivo e experiência do usuário.
+
+    Especialista em DevOps (opcional):
+        Responsabilidades: Configuração e manutenção de servidores, deploy contínuo, e automação de processos.
+        Habilidades Necessárias: Conhecimento em serviços de cloud (AWS, DigitalOcean), CI/CD, segurança de servidores.
+
+    Gerente de Projeto (opcional):
+        Responsabilidades: Planejamento, acompanhamento do progresso, e coordenação da equipe.
+        Habilidades Necessárias: Gestão de projetos, ferramentas de gerenciamento (Trello, Jira), habilidades de comunicação.
+
+2. Recursos Técnicos
+
+    Ambiente de Desenvolvimento:
+        Ferramentas: PHP, Laravel, MySQL/PostgreSQL, Composer.
+        IDE/Editor de Código: Visual Studio Code, PHPStorm.
+
+    Serviços de Armazenamento e Hospedagem:
+        Serviços: AWS S3, DigitalOcean Spaces (para upload de arquivos).
+        Servidor: DigitalOcean, Heroku, AWS EC2 (para deploy).
+
+    Banco de Dados:
+        Sistema: MySQL, PostgreSQL.
+
+    Autenticação e Segurança:
+        Pacotes: Laravel Auth, Laravel Jetstream, Fortify.
+        Certificados SSL: Para segurança de comunicação.
+
+    Ferramentas de Teste:
+        Testes Unitários e de Integração: PHPUnit, Laravel Dusk.
+        Ferramentas de Teste de Performance: Apache JMeter, New Relic.
+
+3. Recursos Materiais
+
+    Documentação:
+        Documentação Técnica: Descrição das APIs, estrutura do banco de dados, e instruções de uso.
+        Documentação do Usuário: Guias para professores e alunos, FAQs.
+
+    Design e Prototipagem:
+        Ferramentas de Design: Figma, Adobe XD, Sketch.
+        Templates e Assets: Imagens, ícones, fontes, e recursos visuais.
+
+    Equipamentos:
+        Computadores: Para desenvolvedores e designers.
+        Testes de Dispositivos: Para garantir a responsividade e compatibilidade.
+
+    Recursos Financeiros:
+        Orçamento para ferramentas e serviços pagos: Hospedagem, serviços de cloud, ferramentas de design e desenvolvimento.
+
+
+				Análise de Riscos:
+
+
+Risco Técnico
+
+1.1. Problemas de Desempenho e Escalabilidade
+
+    Descrição: A plataforma pode não suportar um grande número de usuários simultâneos ou volumes elevados de dados.
+    Mitigação:
+        Realizar testes de carga e stress para identificar pontos de estrangulamento.
+        Implementar práticas de otimização de código e banco de dados.
+        Considerar o uso de serviços escaláveis (como AWS ou DigitalOcean) e caching.
+
+1.2. Bugs e Erros no Código
+
+    Descrição: Erros inesperados podem surgir e afetar a funcionalidade da aplicação.
+    Mitigação:
+        Adotar uma abordagem de desenvolvimento ágil com ciclos de feedback rápidos.
+        Implementar testes unitários e de integração rigorosos.
+        Realizar revisões de código regulares.
+
+1.3. Problemas de Integração com Serviços Externos
+
+    Descrição: Dificuldades na integração com serviços de armazenamento, autenticação, ou APIs externas.
+    Mitigação:
+        Usar bibliotecas e pacotes bem suportados e atualizados.
+        Testar integrações em ambientes de desenvolvimento antes de lançar em produção.
+
+2. Risco de Segurança
+
+2.1. Vulnerabilidades de Segurança
+
+    Descrição: A plataforma pode ser vulnerável a ataques como SQL Injection, XSS, e CSRF.
+    Mitigação:
+        Seguir práticas recomendadas de segurança para desenvolvimento em Laravel.
+        Realizar auditorias de segurança e testes de penetração.
+        Implementar autenticação robusta e criptografia de dados sensíveis.
+
+2.2. Vazamento de Dados Pessoais
+
+    Descrição: Dados pessoais dos usuários podem ser expostos ou vazados.
+    Mitigação:
+        Implementar criptografia para dados armazenados e em trânsito.
+        Adotar políticas rigorosas de controle de acesso e proteção de dados.
+
+3. Risco de Projeto
+
+3.1. Atrasos no Cronograma
+
+    Descrição: O projeto pode atrasar devido a problemas inesperados ou subestimativa de tempo.
+    Mitigação:
+        Criar um cronograma realista com margens para imprevistos.
+        Fazer avaliações regulares do progresso e ajustar o cronograma conforme necessário.
+        Priorizar funcionalidades e usar abordagens ágeis para entregas incrementais.
+
+3.2. Recursos Insuficientes
+
+    Descrição: A falta de recursos humanos, financeiros ou técnicos pode impactar o desenvolvimento.
+    Mitigação:
+        Planejar o orçamento com antecedência e garantir que os recursos estejam alocados conforme o necessário.
+        Considerar contratações temporárias ou freelancers se necessário.
+
+4. Risco Operacional
+
+4.1. Problemas de Usabilidade e Aceitação do Usuário
+
+    Descrição: A plataforma pode não atender às expectativas dos usuários ou ser difícil de usar.
+    Mitigação:
+        Conduzir testes de usabilidade e coletar feedback dos usuários durante o desenvolvimento.
+        Implementar um design intuitivo e realizar iterações com base no feedback recebido.
+
+4.2. Questões de Conformidade Legal
+
+    Descrição: A plataforma pode não estar em conformidade com regulamentações e leis (como GDPR).
+    Mitigação:
+        Consultar com um especialista em conformidade legal para garantir que a plataforma atenda às regulamentações aplicáveis.
+        Implementar políticas de privacidade e termos de serviço claros.
+
+5. Risco de Mercado
+
+5.1. Concorrência
+
+    Descrição: A plataforma pode enfrentar concorrência de outras soluções estabelecidas no mercado.
+    Mitigação:
+        Realizar uma análise de mercado para entender as necessidades dos usuários e o posicionamento da concorrência.
+        Desenvolver funcionalidades únicas ou oferecer um diferencial competitivo.
+
+5.2. Mudanças nas Necessidades dos Usuários
+
+    Descrição: As necessidades e expectativas dos usuários podem mudar ao longo do tempo.
+    Mitigação:
+        Manter um canal de feedback contínuo com os usuários.
+        Adaptar e atualizar a plataforma conforme as tendências e feedback dos usuários.
+
+
+			Diagrama de uso exeplificado em texto:
+
+
+				Administrador:
+
+-Gerencia Usuários
+-Gerencia Cursos
+-Gerencia Matrículas
+
+
+
+				Professor:
+-Cria Curso
+-Gerencia Conteúdo do Curso
+-Avalia Alunos
+-Interagi com Alunos
+
+
+				Aluno:
+-Inscreve-se em Cursos
+-Acessa Aulas
+-Envia Trabalhos(em progresso)
+-Faz Avaliações(em progresso)
+
+
+				Visitante(em progresso):
+-Visualiza Cursos Disponíveis
+
+
