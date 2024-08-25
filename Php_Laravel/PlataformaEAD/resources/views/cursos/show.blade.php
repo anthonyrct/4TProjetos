@@ -13,10 +13,10 @@
                 <p>Preço: R$ {{ $curso->preco }}</p>
 
 
-                {{-- <form method="POST" action="{{ route('pedidos.add', $curso->id) }}">
+                <form method="POST" action="{{ route('matricula.add', $curso->id) }}">
                     @csrf
-                    <button type="submit" class="btn btn-primary">Fazer Inscrição</button>
-                </form> --}}
+                    <button type="submit" class="btn btn-primary">Fazer Matricula</button>
+                </form>
             </div>
         </div>
     </div>

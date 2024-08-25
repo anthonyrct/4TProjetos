@@ -13,8 +13,15 @@ class Curso extends Model
 
 
     protected $fillable = [
-        'titulo', 'descricao', 'categoria', 'preco',
+        'titulo', 'descricao', 'categoria', 'preco', 'professor'
     ];
 
+    public function inscricoes() {
+        return $this->hasMany(Matricula::class);
+    }
+
+    public function professor() {
+        return $this->belongsTo(Usuario::class, 'professor');
+    }
 
 }

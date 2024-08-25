@@ -22,7 +22,7 @@
         @foreach ($cursos as $curso)
             <div class="col-md-4">
                 <div class="card">
-                    <img src="/assets/img/img1.png" class="card-img-top" alt="{{ $curso->titulo }}">
+                    <img src="/assets/img/img1.jpg" class="card-img-top" alt="{{ $curso->titulo }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ $curso->titulo }}</h5>
                         <p class="card-text">{{ $curso->descricao }}</p>

@@ -13,10 +13,13 @@ class CursoController extends Controller
      */
     public function index()
     {
-        $professor = Auth::user()->titulo;
-        $cursos = Curso::where('professor', $professor)->get();
+      // Obtém o nome do professor autenticado (ou outro identificador que você esteja utilizando)
+    $professorNome = Auth::user()->nome; // Certifique-se de que este é o campo correto
 
-        return view('cursos.index', compact('cursos'));
+    // Filtra os cursos pelo nome do professor autenticado
+    $cursos = Curso::where('professor', $professorNome)->get();
+
+    return view('cursos.index', compact('cursos'));
     }
 
     /**
@@ -31,18 +34,22 @@ class CursoController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
-        $dados = $request->validate([
-            'titulo'=> 'required|max:100',
-            'descricao'=> 'required',
-            'categoria'=> 'required',
-            'preco'=>'required|numeric',
-        ]);
-        Curso::create($dados);
+{
+    $dados = $request->validate([
+        'titulo'=> 'required|max:100',
+        'descricao'=> 'required',
+        'categoria'=> 'required',
+        'preco'=>'required|numeric',
+    ]);
 
-        return redirect()->route('cursos.index')
-            ->with('success', 'Curso criado com sucesso.');
-    }
+    // Adiciona o professor autenticado ao curso
+    $dados['professor'] = Auth::user()->nome; // Ou qualquer campo que identifique o professor
+
+    Curso::create($dados);
+
+    return redirect()->route('cursos.index')
+        ->with('success', 'Curso criado com sucesso.');
+}
 
     /**
      * Show the form for editing the specified resource.
@@ -79,5 +86,13 @@ class CursoController extends Controller
 
          return redirect()->route('cursos.index')
              ->with('success', 'Curso deletado com sucesso.');
+    }
+
+    public function show(Curso $curso)
+    {
+        // Carrega as informações do professor associado ao curso
+        $curso->load('professor');
+
+        return view('cursos.show', compact('curso'));
     }
 }
