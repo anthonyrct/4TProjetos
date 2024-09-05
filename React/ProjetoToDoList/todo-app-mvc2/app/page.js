@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 
 export default function Home() {
   const [todos, setTodos] = useState([]);
+  const [newTodoTitle, setNewTodoTitle] = useState('');
   const [newTodo, setNewTodo] = useState('');
 
 
