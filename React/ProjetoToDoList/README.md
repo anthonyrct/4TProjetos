@@ -92,3 +92,41 @@ Infraestrutura
     Problemas com a Integração de Serviços Externos 🌐
     Atrasos no Cronograma ⏳
     Orçamento Excedente 💸
+
+
+
+
+                                prototipos:
+
+
+
+
+                                baixa fidelidade:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                Media Fidelidade:
+
+                                
+
+
