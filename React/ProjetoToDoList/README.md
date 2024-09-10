@@ -1,129 +1,135 @@
-# 📝 **Escopo do Projeto: Aplicação To-Do List com Objetivos SMART, Cronograma, Análise de Risco e Recursos**
+Escopo do Projeto To-Do List com Objetivos, Cronograma, Análise de Risco e Recursos
+🎯 Objetivos Específicos
 
-## 1. 🎯 **Visão Geral do Projeto**
-A aplicação **To-Do List** será uma plataforma de gerenciamento de tarefas que vai além das listas tradicionais. Ela integrará os conceitos de **objetivos SMART** (Específicos, Mensuráveis, Alcançáveis, Relevantes e Temporais), gerenciamento de **cronograma**, **análise de riscos** e alocação de **recursos**. A aplicação terá foco na **produtividade** e na gestão eficiente de projetos pessoais e profissionais.
+    Autenticação de Usuários: Implementar sistema de autenticação seguro com JWT.
+    Gerenciamento de Tarefas: Permitir criação, edição, exclusão e organização de tarefas.
+    Interface de Usuário Responsiva: Garantir que a aplicação funcione bem em todos os dispositivos.
+    Filtros e Busca de Tarefas: Implementar filtros e busca para tarefas.
+    Notificações e Lembretes: Implementar sistema de notificações e lembretes.
+    Compartilhamento de Tarefas: Permitir que os usuários compartilhem tarefas com grupos.
+    Relatórios e Estatísticas de Produtividade: Implementar relatórios e estatísticas.
+    Segurança e Integridade dos Dados: Garantir a segurança dos dados dos usuários.
+    Escalabilidade da Aplicação: Preparar a aplicação para crescer com a base de usuários.
 
-## 2. ✨ **Funcionalidades Principais**
-- **✅ Criação e Gerenciamento de Tarefas (To-Do List)**
-  - ➕ Adicionar, ✏️ editar e 🗑️ remover tarefas.
-  - ✅ Marcar tarefas como concluídas.
-  - 🔝 Priorizar tarefas (alta, média, baixa).
-  - 🗂️ Organização de tarefas por categorias ou projetos.
+📏 Objetivos Mensuráveis
 
-- **🎯 Objetivos SMART**
-  - 📝 Definir metas e objetivos com base na metodologia SMART.
-  - 🔗 Relacionar tarefas a objetivos específicos.
-  - 📊 Monitoramento do progresso em relação a cada objetivo SMART.
-  
-- **🗓️ Cronograma**
-  - 📅 Estabelecer datas de início e fim para tarefas e projetos.
-  - 📆 Exibir cronograma de atividades em um calendário interativo.
-  - 🔔 Notificações e lembretes sobre prazos próximos.
+    Autenticação de Usuários: Sistema de login e registro funcionando com autenticação JWT.
+    Gerenciamento de Tarefas: Funcionalidades de CRUD para tarefas implementadas e testadas.
+    Interface de Usuário Responsiva: Interface testada em dispositivos móveis e desktop.
+    Filtros e Busca de Tarefas: Funcionalidade de filtros e busca operacional.
+    Notificações e Lembretes: Sistema de notificações funcionando corretamente.
+    Compartilhamento de Tarefas: Funcionalidade de compartilhamento implementada e testada.
+    Relatórios e Estatísticas de Produtividade: Relatórios e estatísticas gerados com sucesso.
+    Segurança e Integridade dos Dados: Dados dos usuários criptografados e seguros.
+    Escalabilidade da Aplicação: Arquitetura escalável implementada e testada.
 
-- **⚠️ Análise de Risco**
-  - 🔍 Identificação de possíveis riscos relacionados a cada tarefa ou objetivo.
-  - 📉 Definir a probabilidade e impacto de cada risco.
-  - 🛡️ Estabelecer planos de contingência para mitigar riscos.
+🎯 Objetivos Atingíveis
 
-- **🔧 Recursos**
-  - 💼 Associar recursos (tempo, dinheiro, pessoas) às tarefas e objetivos.
-  - 📈 Acompanhar a alocação e uso de recursos.
-  - 🧾 Gerar relatórios sobre a utilização de recursos ao longo do tempo.
+    Autenticação de Usuários: Baseado em práticas seguras de desenvolvimento e bibliotecas confiáveis.
+    Gerenciamento de Tarefas: Funcionalidades definidas e priorizadas com base em requisitos de usuários.
+    Interface de Usuário Responsiva: Design adaptado e testado para diversos dispositivos.
+    Filtros e Busca de Tarefas: Implementação viável usando ferramentas de filtragem e busca.
+    Notificações e Lembretes: Sistema viável utilizando serviços de email e notificações push.
+    Compartilhamento de Tarefas: Funcionalidade implementada com base em requisitos de colaboração.
+    Relatórios e Estatísticas de Produtividade: Relatórios desenvolvidos usando dados disponíveis e ferramentas de análise.
+    Segurança e Integridade dos Dados: Medidas de segurança aplicadas e testadas.
+    Escalabilidade da Aplicação: Arquitetura projetada para crescer conforme a base de usuários aumenta.
 
-## 3. 🛠️ **Estrutura de Dados**
-- **Tarefa**
-  - 🆔 **ID**
-  - 📝 **Título**
-  - 🖊️ **Descrição**
-  - 📌 **Status** (Pendente, Em Progresso, Concluída)
-  - 🔝 **Prioridade**
-  - 📅 **Data de Início e Fim**
-  - 🗂️ **Categoria** (Projeto, Pessoal, etc.)
-  - 🎯 **Objetivo relacionado** (SMART)
-  - 🔧 **Recursos relacionados**
+🔑 Objetivos Relevantes
 
-- **Objetivo SMART**
-  - 🆔 **ID**
-  - 📝 **Título**
-  - 🖊️ **Descrição**
-  - ✅ **Critérios SMART** (Específico, Mensurável, Alcançável, Relevante, Temporal)
-  - 🔗 **Tarefas relacionadas**
-  - 📊 **Progresso**
-  
-- **Risco**
-  - 🆔 **ID**
-  - ⚠️ **Descrição do Risco**
-  - 📉 **Probabilidade** (Alta, Média, Baixa)
-  - 📊 **Impacto** (Alto, Médio, Baixo)
-  - 🔗 **Tarefa/Objetivo relacionado**
-  - 🛡️ **Plano de contingência**
+    Autenticação de Usuários: Protege a privacidade dos dados e garante acesso autorizado.
+    Gerenciamento de Tarefas: Facilita a organização e eficiência na gestão de tarefas.
+    Interface de Usuário Responsiva: Melhora a experiência do usuário em diferentes dispositivos.
+    Filtros e Busca de Tarefas: Ajuda na organização e rápida localização de tarefas.
+    Notificações e Lembretes: Aumenta a produtividade e evita perda de prazos importantes.
+    Compartilhamento de Tarefas: Facilita a colaboração em projetos e tarefas.
+    Relatórios e Estatísticas de Produtividade: Fornece insights sobre a eficiência e progresso do usuário.
+    Segurança e Integridade dos Dados: Protege informações pessoais e mantém a confiança dos usuários.
+    Escalabilidade da Aplicação: Garante que a aplicação possa crescer e se adaptar a mais usuários.
 
-- **Recurso**
-  - 🆔 **ID**
-  - 🛠️ **Tipo de Recurso** (Tempo, Dinheiro, Pessoa)
-  - 🔢 **Quantidade disponível**
-  - 🔗 **Tarefa/Objetivo relacionado**
-  - 📊 **Uso atual do recurso**
+🗓️ Objetivos Temporais
 
-## 4. 🧩 **Componentes React**
-- **📋 TaskList (Lista de Tarefas)**
-  - Renderiza todas as tarefas criadas pelo usuário.
-  - Funções de adicionar, editar, remover e marcar tarefas como concluídas.
+    Semana 1-2: Implementar e testar autenticação de usuários.
+    Semana 3: Implementar segurança e integridade dos dados.
+    Semana 4-5: Desenvolver funcionalidades de gerenciamento de tarefas.
+    Semana 6-7: Implementar interface de usuário responsiva.
+    Semana 8: Implementar filtros e busca de tarefas.
+    Semana 9-10: Implementar notificações e lembretes.
+    Semana 11-12: Desenvolver compartilhamento de tarefas.
+    Semana 13-14: Implementar relatórios e estatísticas de produtividade.
+    Semana 15-16: Preparar escalabilidade, realizar testes finais e preparar para o lançamento.
 
-- **🎯 SMARTGoal (Objetivos SMART)**
-  - Interface para criar e gerenciar objetivos SMART.
-  - Mostra o progresso dos objetivos relacionados às tarefas.
+🛠️ Recursos Necessários
+Recursos Humanos
 
-- **🗓️ Schedule (Cronograma)**
-  - Calendário interativo para visualizar o cronograma de tarefas.
-  - Inclui funcionalidade de arrastar e soltar para reordenar datas.
+    Desenvolvedor Full-Stack 🧑‍💻
+    Designer de UI/UX 🎨
+    Gerente de Projeto 📅
+    Tester/QA 🧪
 
-- **⚠️ RiskAnalysis (Análise de Risco)**
-  - Tela para visualizar e gerenciar riscos associados às tarefas.
-  - Acompanhamento de probabilidade e impacto.
+Ferramentas e Tecnologias
 
-- **🔧 ResourceManagement (Gerenciamento de Recursos)**
-  - Interface para adicionar e monitorar recursos relacionados às tarefas e objetivos.
-  - Relatórios de uso de recursos.
+    Back-End: Node.js, Express.js, MongoDB, Mongoose, JWT, Nodemailer
+    Front-End: React.js, Material-UI/Bootstrap, Redux, Axios/Fetch API
+    Ferramentas de Desenvolvimento: VS Code, Postman, Git & GitHub, Docker
+    Ferramentas de Teste: Jest/Cypress, Postman/Newman
+    Ferramentas de Design: Figma, Sketch, Adobe XD
 
-- **📊 Dashboard**
-  - Painel de controle com visão geral de todas as tarefas, objetivos SMART, cronograma, análise de risco e recursos.
-  - Exibição de gráficos e indicadores de desempenho.
+Infraestrutura
 
-## 5. 🛠️ **Tecnologias e Ferramentas**
-- **⚛️ React**: Biblioteca principal para o desenvolvimento da interface.
-- **🔀 React Router**: Para navegação entre diferentes páginas/componentes.
-- **📅 React Calendar/FullCalendar**: Para o cronograma interativo.
-- **🔄 Redux**: Para gerenciamento global de estado (opcional).
-- **⚛️ React Context API**: Alternativa para o gerenciamento de estado.
-- **📊 Chart.js/Recharts**: Para exibir gráficos e relatórios visuais.
-- **📅 Moment.js/Day.js**: Para manipulação de datas.
-- **🎨 Styled Components/Sass**: Para estilização dos componentes.
+    Servidores: Para desenvolvimento e produção.
+    Controle de Versão: GitHub/GitLab
+    CI/CD: GitHub Actions, Jenkins, Travis CI
+    Serviço de Email: SendGrid, Mailgun, AWS SES
 
-## 6. 🔗 **Integração e API**
-- **Back-End (Obrigatório)**
-  - A aplicação integrará com uma **API RESTful** para persistência de dados e gerenciamento de usuários (pode ser em Node.js, Laravel, ou outra tecnologia).
-  - 🔒 **Autenticação de usuários** para personalização das tarefas e objetivos.
+⚠️ Análise de Riscos
 
-## 7. 🚀 **Fluxo de Trabalho**
-1. **Início**: O usuário cria uma conta ou faz login.
-2. **Dashboard**: O usuário visualiza uma visão geral das tarefas, objetivos, cronograma e recursos.
-3. **Criação de Tarefas**: O usuário adiciona novas tarefas e as relaciona a um objetivo SMART.
-4. **Gerenciamento de Cronograma**: O usuário define datas para suas tarefas no cronograma.
-5. **Análise de Riscos**: O usuário identifica e gerencia riscos potenciais.
-6. **Recursos**: O usuário associa e monitora recursos alocados para suas tarefas.
-7. **Conclusão**: O usuário finaliza as tarefas e alcança seus objetivos SMART.
+    Problemas com a Implementação de Autenticação 🔒
+    Problemas de Performance e Escalabilidade 🚀
+    Problemas com a Responsividade da Interface 📱
+    Bugs e Problemas de Qualidade do Software 🐛
+    Falta de Alinhamento com os Requisitos do Usuário 🎯
+    Problemas com a Integração de Serviços Externos 🌐
+    Atrasos no Cronograma ⏳
+    Orçamento Excedente 💸
 
-## 8. 🎨 **Design e UX**
-- Interface limpa e intuitiva.
-- Uso de cores para destacar prioridades e status de tarefas.
-- Layout **responsivo** para uso em diferentes dispositivos.
 
-## 9. 🧪 **Testes**
-- ✅ Testes **unitários** para todos os componentes React.
-- 🔄 Testes de **integração** para garantir a funcionalidade de ponta a ponta.
-- 🖥️ Testes de **interface** para garantir uma boa experiência do usuário (UX).
 
-## 10. 📅 **Lançamento**
-- **Fase Beta**: Lançamento inicial para um grupo de usuários restritos.
-- **Lançamento Final**: Disponibilizar a aplicação ao público geral após a fase de testes.
+
+                                prototipos:
+
+
+
+
+                                baixa fidelidade:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                Media Fidelidade:
+
+                                
+
+
+                            
+                            
+
