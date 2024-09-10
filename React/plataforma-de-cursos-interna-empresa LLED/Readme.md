@@ -95,7 +95,7 @@ A Plataforma EAD da LLED será um sistema interno inovador para capacitar os fun
     Semana 11-12: Testes e ajustes finais.
     Semana 13: Lançamento da plataforma e treinamento dos usuários.
 <p>
-<img src="/img/Cronograma3.png" alt="cronograma" width="1000px">
+<img src="img/Cronograma3.png" alt="cronograma" width="1000px">
 </p>
 ✅ Critérios de Aceitação:
 
@@ -150,3 +150,18 @@ A Plataforma EAD da LLED será um sistema interno inovador para capacitar os fun
     💵 Infraestrutura de Hospedagem: Custos com servidores e armazenamento de mídia.
     💳 Licenças de Software: Para bibliotecas premium, se necessário.
     📚 Treinamento: Orçamento para capacitar os usuários no pós-lançamento.
+
+
+    Diagrama de uso:
+    <p>
+<img src="img/diagramauso.png" alt="cronograma" width="1000px">
+</p>
+
+    Diagrama de classe:
+<p>
+<img src="img/ddd.png" alt="cronograma" width="1000px">
+</p>
+    Diagrama de fluxo:
+    <p>
+<img src="img/diagramafluxo.png" alt="cronograma" width="1000px">
+</p>
