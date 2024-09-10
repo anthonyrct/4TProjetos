@@ -1,26 +1,50 @@
-import dbConnect from '../../../../utils/dbConnect';
-import User from '../../../../models/User';
-import { NextResponse } from 'next/server';
-import { signToken } from '../../../../utils/jwtUtils';
+'use client';
 
 
-export async function POST(req) {
-  await dbConnect();
-  const { email, password } = await req.json();
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 
-  try {
-    const user = await User.findOne({ email });
-    if (!user || !(await user.comparePassword(password))) {
-      return NextResponse.json({ message: 'Credenciais inválidas.' }, { status: 400 });
+export default function Login() {
+  const [username, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const router = useRouter();
+
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const response = await fetch('/api/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    });
+
+
+    const data = await response.json();
+    if (response.ok) {
+      localStorage.setItem('token', data.token);
+      router.push('/tasks');
+    } else {
+      alert('Credenciais inválidas');
     }
+  };
 
 
-    const token = signToken(user._id);
-
-
-    return NextResponse.json({ token }, { status: 200 });
-  } catch (error) {
-    return NextResponse.json({ message: 'Erro ao autenticar usuário.' }, { status: 500 });
-  }
+  return (
+    <form onSubmit={handleLogin}>
+      <input
+        type="text"
+        placeholder="Email do Usuário"
+        value={email}
+        onChange={(e) => setemail(e.target.value)}
+      />
+      <input
+        type="password"
+        placeholder="Senha"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button type="submit">Login</button>
+    </form>
+  );
 }
