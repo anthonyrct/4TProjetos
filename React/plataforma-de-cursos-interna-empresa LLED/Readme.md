@@ -61,7 +61,9 @@ A Plataforma EAD da LLED será um sistema interno inovador para capacitar os fun
     Semana 9-10: Implementação de relatórios e dashboards.
     Semana 11-12: Testes e ajustes finais.
     Semana 13: Lançamento da plataforma e treinamento dos usuários.
-
+<p>
+<img src="/img/Cronograma3.png" alt="cronograma" width="1000px">
+</p>
 ✅ Critérios de Aceitação:
 
     🧑‍💼 Gerentes podem atribuir e recomendar cursos para seus times.
