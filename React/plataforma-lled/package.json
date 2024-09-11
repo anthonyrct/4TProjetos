@@ -1,0 +1,20 @@
+{
+  "name": "plataforma-lled",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.2",
+    "next": "14.2.9",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}
