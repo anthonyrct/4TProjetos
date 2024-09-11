@@ -1,6 +1,4 @@
-🌟 Escopo do Projeto:
-Nome: Plataforma de Cursos Interna - LLED 🏢
-🌟 Escopo do Projeto:
+🌟 Escopo do Projeto/documentação:
 Nome: Plataforma de Cursos Interna - LLED 🏢
 
 A Plataforma EAD da LLED será um sistema interno inovador para capacitar os funcionários da empresa no setor financeiro e de negócios. O foco está na seleção de cursos por gerentes de equipe e na recomendação de cursos que mais contribuam para a performance dos colaboradores. 🎯
