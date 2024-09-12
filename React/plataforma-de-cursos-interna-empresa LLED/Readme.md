@@ -149,17 +149,35 @@ A Plataforma EAD da LLED será um sistema interno inovador para capacitar os fun
     💳 Licenças de Software: Para bibliotecas premium, se necessário.
     📚 Treinamento: Orçamento para capacitar os usuários no pós-lançamento.
 
-
-    Diagrama de uso:
+<h1>Diagrama de uso:</h1>
     <p>
 <img src="img/diagramauso.png" alt="cronograma" width="1000px">
 </p>
+<br>
 
-    Diagrama de classe:
+   <h1>Diagrama de classe:</h1> 
 <p>
 <img src="img/ddd.png" alt="cronograma" width="1000px">
 </p>
-    Diagrama de fluxo:
+<br>
+<h1>Diagrama de fluxo:</h1> 
     <p>
 <img src="img/diagramafluxo.png" alt="cronograma" width="1000px">
+</p>
+<br>
+<h1>Protótipos de baixa fidelidade</h1>
+<p>
+<img src="img/baixa fideli.png" alt="cronograma" width="1000px">
+</p>
+<br>
+
+<h1>Protótipos de média fidelidade</h1>
+<p>
+<img src="img/media fideli.png" alt="cronograma" width="1000px">
+</p>
+<br>
+
+<h1>Protótipos de alta fidelidade</h1>
+<p>
+<img src="img/alta fideli.png" alt="cronograma" width="1000px">
 </p>
