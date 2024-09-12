@@ -5,8 +5,25 @@ A Plataforma EAD da LLED será um sistema interno inovador para capacitar os fun
 A Plataforma EAD da LLED será um sistema interno inovador para capacitar os funcionários da empresa no setor financeiro e de negócios. O foco está na seleção de cursos por gerentes de equipe e na recomendação de cursos que mais contribuam para a performance dos colaboradores. 🎯
 🎯 Objetivos do Projeto:
 
-    🧠 Desenvolvimento contínuo: Prover uma plataforma intuitiva e de fácil uso para capacitar os funcionários.
-    💼 Recomendações: Permitir que gerentes de equipes escolham e recomendem cursos.
+## Objetivo Específico 🎯
+**Descrição:** Desenvolver uma plataforma EAD que permita aos gerentes selecionar e recomendar cursos para seus funcionários.
+- **Detalhes:** Implementar uma plataforma onde gerentes possam escolher cursos relevantes para sua equipe e também acessar cursos recomendados pela empresa.
+
+## Objetivo Mensurável 📊
+**Descrição:** Ter pelo menos 10 cursos cadastrados e disponíveis para seleção pelos gerentes dentro de 3 meses após o lançamento da plataforma.
+- **Métrica:** Monitorar o número de cursos cadastrados e a quantidade de cursos selecionados pelos gerentes e recomendados aos funcionários.
+
+## Objetivo Atingível ✔️
+**Descrição:** Assegurar que 80% dos gerentes da empresa utilizem a plataforma para selecionar cursos para suas equipes dentro de 6 meses após o lançamento.
+- **Plano de Ação:** Realizar treinamentos e fornecer suporte para garantir que a maioria dos gerentes utilize a plataforma regularmente.
+
+## Objetivo Relevante 🌟
+**Descrição:** Melhorar a performance da equipe ao garantir que 75% dos funcionários participem de pelo menos um curso recomendado pelos gerentes dentro de 9 meses.
+- **Impacto Esperado:** Garantir que a plataforma contribua efetivamente para o desenvolvimento profissional dos funcionários e para a melhoria das equipes.
+
+## Objetivo Temporal ⏰
+**Descrição:** Lançar a plataforma EAD em 6 meses e realizar uma avaliação da utilização e feedback dos usuários após 3 meses do lançamento.
+- **Cronograma:** Estabelecer um cronograma para o desenvolvimento, lançamento e avaliação da plataforma para ajustar conforme necessário e garantir a eficácia do sistema.
 
 🚀 Funcionalidades Principais:
 3.1. Gerenciamento de Cursos:
