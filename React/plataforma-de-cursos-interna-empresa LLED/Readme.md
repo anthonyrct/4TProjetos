@@ -12,78 +12,49 @@ A Plataforma EAD da LLED será um sistema interno inovador para capacitar os fun
 
 🚀 Funcionalidades Principais:
 3.1. Gerenciamento de Cursos:
-🚀 Funcionalidades Principais:
-3.1. Gerenciamento de Cursos:
 
-    👨‍💼 Gerentes podem selecionar cursos para suas equipes.
-    📚 Cursos recomendados pelo administrador estarão disponíveis para todos os funcionários.
     👨‍💼 Gerentes podem selecionar cursos para suas equipes.
     📚 Cursos recomendados pelo administrador estarão disponíveis para todos os funcionários.
 
 3.2. Recomendações e Atribuições de Cursos:
-3.2. Recomendações e Atribuições de Cursos:
 
-    🎯 Gerentes podem recomendar cursos.
-    👩‍💻 Funcionários podem ver as recomendações na sua área de usuário.
     🎯 Gerentes podem recomendar cursos.
     👩‍💻 Funcionários podem ver as recomendações na sua área de usuário.
 
 3.3. Cadastro e Login de Usuários:
-3.3. Cadastro e Login de Usuários:
 
     🔐 Autenticação para gerentes e funcionários (com diferentes níveis de acesso).
     🆕 Cadastro de novos funcionários com permissão do administrador.
-    🔐 Autenticação para gerentes e funcionários (com diferentes níveis de acesso).
-    🆕 Cadastro de novos funcionários com permissão do administrador.
 
-3.4. Perfil de Usuário:
 3.4. Perfil de Usuário:
 
     📋 Área para visualizar cursos em andamento e concluídos.
     📊 Progresso visual dos cursos.
     🏅 Histórico de cursos completados.
-    📋 Área para visualizar cursos em andamento e concluídos.
-    📊 Progresso visual dos cursos.
-    🏅 Histórico de cursos completados.
 
 3.5. Painel Administrativo:
-3.5. Painel Administrativo:
 
-    👑 Administradores podem gerenciar usuários e cursos.
     👑 Administradores podem gerenciar usuários e cursos.
 
 ⚙️ Requisitos Técnicos:
 4.1. Frontend:
-4.1. Frontend:
 
-    ⚛️ Desenvolvido com React.js para uma interface dinâmica e responsiva.
-    🎨 Integração com Material UI ou Bootstrap para uma UI moderna e amigável.
     ⚛️ Desenvolvido com React.js para uma interface dinâmica e responsiva.
     🎨 Integração com Material UI ou Bootstrap para uma UI moderna e amigável.
 
 4.2. Backend:
-4.2. Backend:
 
-    🖥️ Node.js com Express para gerenciar a lógica do servidor.
-    🔒 Autenticação com JWT (JSON Web Tokens).
-    🖥️ Node.js com Express para gerenciar a lógica do servidor.
+    🖥️ Node.js com Next para gerenciar a lógica do servidor.
     🔒 Autenticação com JWT (JSON Web Tokens).
 
 4.3. Banco de Dados:
-4.3. Banco de Dados:
 
-    💾 MongoDB para armazenar informações de usuários, cursos, progresso e relatórios.
     💾 MongoDB para armazenar informações de usuários, cursos, progresso e relatórios.
 
 4.4. Integração e Comunicação:
-4.4. Integração e Comunicação:
+🔗 Comunicação entre frontend e backend via API REST.
+🗂️ Armazenamento de arquivos de mídia (vídeos, PDFs) em serviços de armazenamento externo.
 
-    🔗 Comunicação entre frontend e backend via API REST.
-    🗂️ Armazenamento de arquivos de mídia (vídeos, PDFs) em serviços de armazenamento externo.
-    🔗 Comunicação entre frontend e backend via API REST.
-    🗂️ Armazenamento de arquivos de mídia (vídeos, PDFs) em serviços de armazenamento externo.
-
-🗓️ Cronograma Inicial:
 🗓️ Cronograma Inicial:
 
     Semana 1-2: Levantamento de requisitos e planejamento do projeto.
@@ -92,6 +63,7 @@ A Plataforma EAD da LLED será um sistema interno inovador para capacitar os fun
     Semana 9-10: Implementação de relatórios e dashboards.
     Semana 11-12: Testes e ajustes finais.
     Semana 13: Lançamento da plataforma e treinamento dos usuários.
+
 <p>
 <img src="img/Cronograma3.png" alt="cronograma" width="1000px">
 </p>
