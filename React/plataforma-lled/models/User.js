@@ -20,6 +20,7 @@ const UserSchema = new mongoose.Schema({
   cursos: [{ type: mongoose.Schema.Types.ObjectId, ref: "Cursos" }],
 });
 
+
 //Chama o crypto
 UserSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
