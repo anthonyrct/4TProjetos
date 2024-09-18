@@ -1,11 +1,12 @@
 package Exercicio_3.controller;
 
 import java.util.InputMismatchException;
-import Exercicio_3.model.*;
+
+import Exercicio_3.model.Operacao;
 import Exercicio_3.view.CalculadoraView;
 
 public class CalculadoraController {
-    
+
     private CalculadoraView view;
 
     public CalculadoraController(CalculadoraView view) {
@@ -62,9 +63,9 @@ public class CalculadoraController {
                 }
 
             } catch (InputMismatchException e) {
-                view.mostrarMensagem("Erro de entrada: " + e.getMessage());
+                view.mostrarMensagem(e.getMessage());
             } catch (ArithmeticException e) {
-                view.mostrarMensagem("Erro de cálculo: " + e.getMessage());
+                view.mostrarMensagem(e.getMessage());
             } catch (Exception e) {
                 view.mostrarMensagem("Erro: " + e.getMessage());
             }
