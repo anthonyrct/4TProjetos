@@ -20,14 +20,17 @@ public class Exercicio4FContaFatorial {
     public void calculadora() throws Exception{
         System.out.println("Digite um numero para calcular o fatorial");
         numero = sc.nextInt();
-        if(numero<0){
-            throw new Exception("o numero deve ser positivo");
-        }
-
+        while (true) {
+            if(numero<0){
+                throw new Exception("o numero deve ser positivo");
+            }
+            
         try{
+
             System.out.println(calculoFatorial(numero));
         }catch(Exception e){
-            System.err.println(e);
+            System.out.println("numero invalido");
+            numero = sc.nextInt();
         }
     }
 }
