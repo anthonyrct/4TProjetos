@@ -4,11 +4,7 @@ public abstract class Operacao {
     public abstract double calcular(double num1, double num2) throws Exception;
 }
 
- public class Soma extends Operacao {
-    public double calcular(double num1, double num2) {
-        return num1 + num2;
-    }
-}
+
 
 class Subtracao extends Operacao {
     public double calcular(double num1, double num2) {

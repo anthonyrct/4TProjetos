@@ -55,7 +55,7 @@ public class CalculadoraController {
                         break;
                     case 5:
                         operacao = new RaizQuadrada();
-                        resultado = operacao.calcular(num1);
+                        resultado = operacao.calcular(num1, num2);
                         view.mostrarResultado(resultado);
                         break;
                     default:
