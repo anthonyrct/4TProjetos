@@ -16,7 +16,6 @@ public class Exercicio4FContaFatorial {
     }
 
     //calcular o fatorial
-
     public void calculadora() throws Exception{
         System.out.println("Digite um numero para calcular o fatorial");
         numero = sc.nextInt();
