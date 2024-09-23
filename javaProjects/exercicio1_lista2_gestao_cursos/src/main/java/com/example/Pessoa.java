@@ -17,6 +17,6 @@ public class Pessoa {
 
     //metodos
     public void exibirInformacoes(){
-    System.out.println("as infomacoes do usuario sao: "+ nome+", "+cpf);
+    System.out.println("nome do usuario: "+ nome+", cpf do usuario: "+cpf);
     }
 }

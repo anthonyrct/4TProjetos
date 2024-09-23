@@ -1,13 +1,23 @@
 package com.example;
 
-public class Funcionario {
-    //atributos
-    private String nome;
-    private String idade;
-    private int salario;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Funcionario {
+    // atributos
+    private String nome;
+    private int idade;
+    private double salario;
+
+    //metodo
     @Override
     public String toString(){
-        return "Nome: "+nome+", idade: "+idade+", salario: "+salario;
+        return "nome: "+nome+", idade: "+idade+", salario: "+salario;
     }
 }
